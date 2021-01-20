@@ -2,24 +2,63 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Montserrat", sans-serif;
   letter-spacing: 2px;
 }
 
 nav {
-    border: 1px black solid;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
+  border: 1px black solid;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-right: 2.5vh;
+  margin-left: 2.5vh;
+  height: 15vh;
+  align-items: center;
 }
 
-.logo{
-    flex: 2;
+.logo {
+  flex: 2;
 }
 
-.navItems{
-    flex: 4;
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
+.navItems {
+  flex: 4;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#airbnb {
+    height: 50px;
+    width: 50px;
+}
+
+main {
+  border: 1px solid black;
+  margin-top: 5vh;
+  margin-right: 2.5vh;
+  margin-left: 2.5vh;
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.img {
+  flex: 1;
+  display: flex;
+}
+
+.img img {
+    height: 100%;    
+    width: 100%;
 }
