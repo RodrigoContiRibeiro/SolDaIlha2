@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 2px;
+}
+
+nav {
+    border: 1px black solid;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.logo{
+    flex: 2;
+}
+
+.navItems{
+    flex: 4;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
