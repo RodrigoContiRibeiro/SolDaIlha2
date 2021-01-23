@@ -54,8 +54,8 @@ nav a {
 
 main {
   margin-top: 6vh;
-  margin-right: 5vh;
-  margin-left: 5vh;
+  margin-right: 7vh;
+  margin-left: 7vh;
   height: 60vh;
   display: flex;
   align-items: center;
@@ -179,7 +179,6 @@ main {
   .ml7 {
     font-size: 25px;
   }
-
 }
 
 @media only screen and (max-width: 395px) {
