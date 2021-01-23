@@ -16,20 +16,21 @@ let img = document.querySelector("#beachImg");
 
 anime({
   targets: logo,
-  translateX: 300,
-  duration: 1000,
+  translateX: 50,
+  duration: 3000,
   easing: "easeOutExpo",
 });
 anime({
   targets: li,
-  translateY: 100,
-  duration: 1000,
+  translateY: 20,
+  duration: 3000,
   easing: "easeOutExpo",
 });
 anime({
   targets: img,
-  translateX: -530,
-  duration: 1000,
+  translateX: -30,
+  translateX: 30,
+  duration: 3000,
   easing: "easeOutExpo",
 });
 
