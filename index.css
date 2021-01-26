@@ -21,6 +21,7 @@ nav {
 
 .logo {
   flex: 2;
+  cursor: pointer;
 }
 
 .logoImg {
@@ -50,6 +51,13 @@ nav a {
 #airbnb {
   height: 55px;
   width: 55px;
+  cursor: pointer;
+}
+
+.burger img{
+  height: 7.5vh;
+  display: none;
+  cursor: pointer;
 }
 
 main {
@@ -91,6 +99,19 @@ main {
   line-height: 1em;
 }
 
+.stay{
+  border: none;
+  background-color: #f2e205;
+  border-radius: 25px;
+  width: 75%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 22.5px;
+  cursor: pointer;
+  opacity: 0;
+}
+
 .img {
   flex: 1;
 }
@@ -120,6 +141,23 @@ main {
   }
 }
 
+@media only screen and (max-width: 980px) {
+  .logo{
+    margin-left: -2vh;
+  }
+}
+@media only screen and (max-width: 910px) {
+  .logo{
+    margin-left: -4vh;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .logo{
+    margin-left: -6vh;
+  }
+}
+
 @media only screen and (max-width: 825px) {
   .ml7 {
     font-size: 30px;
@@ -127,6 +165,18 @@ main {
   #beachImg {
     max-height: 325px;
     max-width: 325px;
+  }
+  .navItems{
+    background-color: gray;
+    flex-direction: column;
+    height: 75vh;
+    width: 40vh;
+    transform: translateY(-100%);
+    align-content: center;
+  }
+
+  .burger img {
+    display: inline;
   }
 }
 
@@ -146,7 +196,7 @@ main {
     margin-top: 6vh;
   }
   .img {
-    margin-top: 5vh;
+    margin-top: 7.5vh;
   }
   #beachImg {
     max-height: 400px;

@@ -34,13 +34,33 @@ anime({
   easing: "easeOutExpo",
 });
 
-anime.timeline({ loop: false }).add({
-  targets: ".ml7 .letter",
-  translateY: ["1.1em", 0],
-  translateX: ["0.55em", 0],
-  translateZ: 0,
-  rotateZ: [180, 0],
-  duration: 4000,
-  easing: "easeOutExpo",
-  delay: (el, i) => 50 * i,
-});
+anime
+  .timeline({ loop: false, duration: 1000 })
+  .add({
+    targets: ".ml7 .letter",
+    translateY: ["1.1em", 0],
+    translateX: ["0.55em", 0],
+    translateZ: 0,
+    rotateZ: [180, 0],
+    duration: 4000,
+    easing: "easeOutExpo",
+    delay: (el, i) => 50 * i,
+  })
+  .add({
+    targets: ".stay",
+    opacity: 1,
+    translateY: 50,
+    duration: 1000,
+    easing: "easeOutExpo",
+  });
+  // ----------------END ANIMATIONS------------------
+
+  // ----------------Nav DOM ------------------------
+
+  let burger = document.querySelector('.burger')
+
+  burger.addEventListener('click', (e)=>{
+    if(e.target.nodeName == 'IMG'){
+      ul.style.transform = 'translateY(30%)'
+    }
+  })
