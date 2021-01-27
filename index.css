@@ -9,14 +9,13 @@
 
 nav {
   display: flex;
-  justify-content: center;
-  flex-direction: row;
+  align-items: center;
   margin-top: 2vh;
   margin-right: 5vh;
   margin-left: 5vh;
   height: 20vh;
-  align-items: center;
-  font-size: 20px;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .logo {
@@ -31,7 +30,7 @@ nav {
 .navItems {
   flex: 4;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   list-style-type: none;
 }
@@ -49,8 +48,8 @@ nav a {
 }
 
 #airbnb {
-  height: 55px;
-  width: 55px;
+  height: 65px;
+  width: 65px;
   cursor: pointer;
 }
 
@@ -58,6 +57,12 @@ nav a {
   height: 7.5vh;
   display: none;
   cursor: pointer;
+}
+
+.burger{
+  position: absolute;
+  top: 10vh;
+  right: 5vh;
 }
 
 main {
@@ -158,6 +163,15 @@ main {
   }
 }
 
+@keyframes navItemsMobile{
+  from{
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @media only screen and (max-width: 825px) {
   .ml7 {
     font-size: 30px;
@@ -167,16 +181,28 @@ main {
     max-width: 325px;
   }
   .navItems{
-    background-color: gray;
-    flex-direction: column;
-    height: 75vh;
+    transform: translateY(-250%);
+  }
+
+  .navItemsMobile{
+    transform: translateY(0);
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
     width: 40vh;
-    transform: translateY(-100%);
-    align-content: center;
+    z-index: 1;
+    flex-direction: column;
+    background-color: #ffffff;
+    animation: navItemsMobile 1s;
   }
 
   .burger img {
     display: inline;
+    z-index: 11;
+  }
+  .burger{
+    z-index: 11;
   }
 }
 
@@ -228,6 +254,9 @@ main {
 @media only screen and (max-width: 440px) {
   .ml7 {
     font-size: 25px;
+  }
+  .stay{
+    font-size: 19px;
   }
 }
 

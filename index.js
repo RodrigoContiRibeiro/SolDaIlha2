@@ -42,9 +42,9 @@ anime
     translateX: ["0.55em", 0],
     translateZ: 0,
     rotateZ: [180, 0],
-    duration: 4000,
+    duration: 2500,
     easing: "easeOutExpo",
-    delay: (el, i) => 50 * i,
+    delay: (el, i) => 40 * i,
   })
   .add({
     targets: ".stay",
@@ -61,6 +61,6 @@ anime
 
   burger.addEventListener('click', (e)=>{
     if(e.target.nodeName == 'IMG'){
-      ul.style.transform = 'translateY(30%)'
+      ul.classList.toggle('navItemsMobile')
     }
   })
