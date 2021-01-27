@@ -126,6 +126,18 @@ main {
   max-width: 500px;
 }
 
+@media only screen and (min-width: 1500px) {
+  main{
+    margin-top: 3vh;
+  }
+  .ml7 {
+    font-size: 55px;
+  }
+  nav{
+    font-size: 35px;
+  }
+}
+
 @media only screen and (max-width: 1145px) {
   .ml7 {
     font-size: 40px;
@@ -143,6 +155,9 @@ main {
   #beachImg {
     max-height: 375px;
     max-width: 375px;
+  }
+  nav{
+    font-size: 25px;
   }
 }
 
